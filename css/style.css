@@ -1,20 +1,22 @@
 /*Mother----------------------------------------------------*/
 
 body {
-  font-family: 'Questrial';
+    font-family: 'Questrial';
 }
 
 header, footer {
-  background: #2056ac;
+    background: #2056ac;
 }
 
 header, main, aside, footer {
-  max-width: 1200px;
-  margin: auto;
+    max-width: 1300px;
+    margin: auto;
 }
-
+main, aside, aside a {
+    color: #5b6063;
+}
 h2, h3, h4 {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 /*Mother----------------------------------------------------*/
@@ -22,78 +24,80 @@ h2, h3, h4 {
 /*Header----------------------------------------------------*/
 
 header {
-  display: flex;
-  text-align: center;
-  flex-direction: column;
-  color: #fff;
-  font-weight: bold;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    color: #fff;
+    font-weight: bold;
 }
 
-img {
-  width: 100vw;
-}
+
 
 header ul {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
 }
 
 header li {
-  font-size: 0.7em;
-  line-height: 3em;
+    font-size: 0.7em;
+    line-height: 3em;
 }
 
 header li:hover, .selected {
-  color: #2056ac;
-  background: #fff;
-  border-top-left-radius: 3px;
-  border-top-right-radius: 3px;
+    color: #2056ac;
+    background: #fff;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
 }
 
 header h1 {
-  font-weight: bold;
-  margin-bottom: 6%;
+    font-weight: bold;
+    margin-bottom: 6%;
 }
 
 #logo {
-  margin: 10% 0 1% 0;
+    margin: 10% 0 1% 0;
 }
 
 /*Header----------------------------------------------------*/
 
 /*Main----------------------------------------------------*/
-
-main img, main section, main hr {
-  margin: 5% 0;
+main {
+    padding: 0 5%
 }
-
+main section, main hr {
+    margin: 5% 0;
+}
+img {
+    margin: 0 auto;
+}
 section p, section h1, section h2, section button {
-  text-align: center;
-  margin: 2% 1%;
+    text-align: center;
+    margin: 2% 1%;
 }
 
 section button {
-  display: block;
-  margin: 0 auto;
-  border-radius: none;
-  border: none;
-  color: white;
-  padding: 1em 1.5em;
-  background-color: rgb(77, 150, 203);
+    display: block;
+    margin: 0 auto;
+    border-radius: none;
+    border: none;
+    color: white;
+    padding: 1em 1.5em;
+    background-color: rgb(77, 150, 203);
 }
 
 section p, section h2 {
-  margin: 5%;
+    margin: 5%;
 }
 
 section>p {
-  max-width: 1200px;
-  margin: 0 auto;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 article {
-  max-width: 530px;
+    max-width: 530px;
 }
 
 /*Main----------------------------------------------------*/
@@ -101,22 +105,32 @@ article {
 /*Aside----------------------------------------------------*/
 
 aside {
-  background: #64ABD1;
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+    background: #e3f0f7;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding-top: 15%;
+
 }
 
 a {
-  text-align: center;
+    text-decoration: none;
+    text-align: center;
+}
+aside h5{
+    padding: 20% 0;
+    width: 220px;
 }
 
+aside i{
+    font-size: 4em;
+}
 /*Aside----------------------------------------------------*/
 
 /*Footer----------------------------------------------------*/
 
 footer {
-  border-top: 5px solid rgba(255, 255, 255, 0.1);
+    border-top: 5px solid rgba(255, 255, 255, 0.1);
 }
 
 /*Footer----------------------------------------------------*/
@@ -124,31 +138,42 @@ footer {
 /*Medias----------------------------------------------------*/
 
 @media screen and (min-width: 720px) {
-  #logo, h1 {
-    font-size: 3em;
-  }
-  header ul {
-    width: 60%;
-    margin: auto;
-  }
-  header li {
-    font-size: 1em;
-    padding: 0 0.2em;
-  }
-  img {
-    max-width: 1200px;
-  }
-  section>h2 {
-    font-size: 4em;
-  }
-  .secArt {
-    display: flex;
-  }
-
-  .secArt p {
-    margin: 2em 1em;
-  }
-
+    #logo, h1 {
+        font-size: 3em;
+    }
+    header ul {
+        width: 60%;
+        margin: auto;
+    }
+    header li {
+        font-size: 1em;
+        padding: 0 0.2em;
+    }
+    img {
+        max-width: 1200px;
+    }
+    section>h2 {
+        font-size: 4em;
+    }
+    .secArt {
+        display: flex;
+    }
+    .secArt p {
+        margin: 2em 1em;
+    }
+    aside {
+        padding-top: 100px;
+    }
+    aside h5{
+        padding: 40px 0;
+    }
 }
-
+@media screen and (min-width: 1800px) {
+    aside {
+        width: 230px;
+        position: fixed;
+        top: 0;
+        right: 0;
+    }
+}
 /*Medias----------------------------------------------------*/
