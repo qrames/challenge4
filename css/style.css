@@ -62,7 +62,28 @@ header h1 {
 /*Header----------------------------------------------------*/
 
 /*Main----------------------------------------------------*/
+main img, main section, main hr{
+    margin: 5% 0;
+}
+section p, section h1, section h2, section button{
+    text-align: center;
+    margin: 2% 1%;
+}
+section button {
+    display: block;
+    margin: 0 auto;
+    border-radius: none;
+    border: none;
+    color: white;
+    padding: 1em 1.5em;
+    background-color: rgb(77, 150, 203);
+}
+section>p, section>h1 {
 
+}
+article {
+    max-width: 530px;
+}
 /*Main----------------------------------------------------*/
 
 /*Aside----------------------------------------------------*/
