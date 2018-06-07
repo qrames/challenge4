@@ -133,6 +133,21 @@ footer {
     border-top: 5px solid rgba(255, 255, 255, 0.1);
 }
 
+footer p {
+  text-align: center;
+  margin: 2em 0;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+}
+
+footer li {
+  margin: 2em 0.5em;
+}
+
+
 /*Footer----------------------------------------------------*/
 
 /*Medias----------------------------------------------------*/
