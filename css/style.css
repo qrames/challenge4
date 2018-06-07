@@ -1,10 +1,11 @@
 /*Mother----------------------------------------------------*/
+
 body {
   font-family: 'Questrial';
 }
 
-header, footer{
-    background: #2056ac;
+header, footer {
+  background: #2056ac;
 }
 
 header, main, aside, footer {
@@ -12,13 +13,14 @@ header, main, aside, footer {
   margin: auto;
 }
 
-h2, h3, h4{
+h2, h3, h4 {
   font-weight: bold;
 }
 
 /*Mother----------------------------------------------------*/
 
 /*Header----------------------------------------------------*/
+
 header {
   display: flex;
   text-align: center;
@@ -58,67 +60,95 @@ header h1 {
   margin: 10% 0 1% 0;
 }
 
-
 /*Header----------------------------------------------------*/
 
 /*Main----------------------------------------------------*/
-main img, main section, main hr{
-    margin: 5% 0;
-}
-section p, section h1, section h2, section button{
-    text-align: center;
-    margin: 2% 1%;
-}
-section button {
-    display: block;
-    margin: 0 auto;
-    border-radius: none;
-    border: none;
-    color: white;
-    padding: 1em 1.5em;
-    background-color: rgb(77, 150, 203);
-}
-section>p, section>h1 {
 
+main img, main section, main hr {
+  margin: 5% 0;
 }
+
+section p, section h1, section h2, section button {
+  text-align: center;
+  margin: 2% 1%;
+}
+
+section button {
+  display: block;
+  margin: 0 auto;
+  border-radius: none;
+  border: none;
+  color: white;
+  padding: 1em 1.5em;
+  background-color: rgb(77, 150, 203);
+}
+
+section p, section h2 {
+  margin: 5%;
+}
+
+section>p {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 article {
-    max-width: 530px;
+  max-width: 530px;
 }
+
 /*Main----------------------------------------------------*/
 
 /*Aside----------------------------------------------------*/
+
 aside {
   background: #64ABD1;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
 }
+
+a {
+  text-align: center;
+}
+
 /*Aside----------------------------------------------------*/
 
 /*Footer----------------------------------------------------*/
+
 footer {
   border-top: 5px solid rgba(255, 255, 255, 0.1);
 }
+
 /*Footer----------------------------------------------------*/
 
 /*Medias----------------------------------------------------*/
 
-@media screen and (min-width: 720px){
-
+@media screen and (min-width: 720px) {
   #logo, h1 {
     font-size: 3em;
   }
-
   header ul {
     width: 60%;
     margin: auto;
   }
-
   header li {
     font-size: 1em;
     padding: 0 0.2em;
   }
-
   img {
     max-width: 1200px;
   }
+  section>h2 {
+    font-size: 4em;
+  }
+  .secArt {
+    display: flex;
+  }
+
+  .secArt p {
+    margin: 2em 1em;
+  }
+
 }
 
 /*Medias----------------------------------------------------*/
